@@ -31,6 +31,10 @@ html {
 
 body {
   background-color: white;
+  background-image: url(./images/bg-pattern-top-mobile.svg),
+    url(./images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 0, bottom 0px right 0px;
 }
 
 .feedbacks {
@@ -42,11 +46,7 @@ body {
   /* outline: 1px salmon solid; */
   width: calc((375 / 15) * 1rem);
   padding: 6.6rem 1.6rem;
-  background-color: var(--color-bg);
-  background-image: url(./images/bg-pattern-top-mobile.svg),
-    url(./images/bg-pattern-bottom-mobile.svg);
-  background-repeat: no-repeat, no-repeat;
-  background-position: 0 0, bottom 0px right 0px;
+  /* background-color: var(--color-bg); */
 }
 
 /* ========================================== */
@@ -99,9 +99,9 @@ body {
   margin-bottom: 1rem;
 }
 
-  /* ========================================== */
-  /* COMMENTS */
-  /* ========================================== */
+/* ========================================== */
+/* COMMENTS */
+/* ========================================== */
 
 .feedbacks__comments {
   margin-top: 2rem;
@@ -127,7 +127,7 @@ body {
 
 .feedbacks__comments-card-title {
   margin-left: 1rem;
-  
+
   color: var(--color-accent-second);
   display: flex;
   flex-direction: column;
@@ -150,11 +150,19 @@ body {
   font-weight: 700;
 }
 
-  /* ========================================== */
-  /* media */
-  /* ========================================== */
+/* ========================================== */
+/* media */
+/* ========================================== */
 
 @media screen and (min-width: 1440px) {
+  body {
+    background-image: url(./images/bg-pattern-top-desktop.svg),
+    url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 0, bottom 0px right 0px;
+
+  }
+
   .feedbacks__container {
     width: 1440px;
     height: 800px;
@@ -223,15 +231,15 @@ body {
     align-self: flex-end;
   }
 
-   /* ========================================== */
+  /* ========================================== */
   /* COMMENTS */
   /* ========================================== */
 
-.feedbacks__comments {
-  display: flex;
-  height: 17.6rem;
-  align-items: center;
-}
+  .feedbacks__comments {
+    display: flex;
+    height: 17.6rem;
+    align-items: center;
+  }
 
   .feedbacks__comments-card {
     height: fit-content;
